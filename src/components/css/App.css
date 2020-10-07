@@ -1,0 +1,123 @@
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+.codepen-clone
+{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.editors-pane
+{
+	display: flex;
+	justify-content: space-around;
+	align-content: stretch;
+	flex: 0 0 50%;
+	padding: 5px;
+	background-color: #333;
+	position: relative;
+	z-index: 10;
+	box-shadow: 0 5px 20px 0 rgba( 0,0,0,.3 );
+}
+
+.editors-pane .editor-container
+{
+	flex: 1 0 auto;
+	padding: 10px;
+	height: 100%;
+	width: 33.33%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	color: #FFF;
+}
+
+.editors-pane .editor-container.collapsed
+{
+	flex-shrink: 1;
+	flex-grow: 0;
+	width: 0;
+	flex-basis: 1%;
+}
+
+
+.editor-container .editor-title
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+}
+
+.editor-container .editor-title h2
+{
+	font-family: Consolas;
+	margin: 0;
+}
+
+.editor-container .editor-title .toggle-editor
+{
+	border: none;
+	background-color: rgba( 0,0,0,.2 );
+	color: #FFF;
+	height: 100%;
+	padding: 0 10px;
+}
+
+.editor-container .editor-title .toggle-editor::after
+{
+	content: 'X';
+}
+
+.editor-container .react-codemirror2
+{
+	flex-grow: 1;
+	position: relative;
+}
+
+.editor-container .CodeMirror 
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.output-pane
+{
+	flex: 0 0 50%;
+}
+
+.output-container
+{
+	height: 100%;
+	display: flex;
+	background-color: #263238;
+}
+
+.output-container iframe
+{
+	position: relative;
+	border: none;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	margin: 0;
+	overflow: auto;
+}
+
+.output-container iframe.has-code
+{
+	background-color: #FFF;
+}
