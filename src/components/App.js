@@ -26,10 +26,10 @@ function App()
 			if( htmlCode.trim() !== '' || cssCode.trim() !== '' || jsCode.trim() !== '' )
 			{
 				setOutput( `
-				<style>${ cssCode }</style>
-				<script>${ jsCode }</script>
-				<body>${ htmlCode }</body>
-			` );
+					<style>${ cssCode }</style>
+					<script>${ jsCode }</script>
+					<body>${ htmlCode }</body>
+				` );
 			}
 
 			// this is actually just to make the iframe colored again if there is no code
