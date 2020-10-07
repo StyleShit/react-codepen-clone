@@ -4,7 +4,7 @@ export default function Output({ srcDoc })
 {
     return (
         <div className="output-container">
-            <iframe className={ srcDoc !== '' ? 'has-code' : '' } 
+            <iframe title="output" className={ srcDoc !== '' ? 'has-code' : '' } 
                     srcDoc={ srcDoc } />
         </div>
     )

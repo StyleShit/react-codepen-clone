@@ -50,9 +50,9 @@ function App()
 	return (
 		<div className="codepen-clone">
 			<div className="editors-pane">
-				<Editor title="HTML" language="xml" value={ htmlCode } setValue={ setHtmlCode } />
-				<Editor title="CSS" language="css" value={ cssCode } setValue={ setCssCode } />
-				<Editor title="JS" language="javascript" value={ jsCode } setValue={ setJsCode } />
+				<Editor appPrefix={ APP_PREFIX } title="HTML" language="xml" value={ htmlCode } setValue={ setHtmlCode } />
+				<Editor appPrefix={ APP_PREFIX } title="CSS" language="css" value={ cssCode } setValue={ setCssCode } />
+				<Editor appPrefix={ APP_PREFIX } title="JS" language="javascript" value={ jsCode } setValue={ setJsCode } />
 			</div>
 
 			<div className="output-pane">
