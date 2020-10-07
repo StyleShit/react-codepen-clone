@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 // enhanced useState which uses localStorage to keep the state after refreshing
 export default function useStickyState( key, defaultValue )
 {
-    const [ value, setValue ] = React.useState( () => {
+    const [ value, setValue ] = useState( () => {
 
         // return the saved state if present, or defaultValue otherwise
         const stickyValue = window.localStorage.getItem( key );
@@ -11,7 +11,7 @@ export default function useStickyState( key, defaultValue )
 
     });
 
-    React.useEffect( () => {
+    useEffect( () => {
 
         // save the state to localStorage
         window.localStorage.setItem( key, JSON.stringify( value ));
