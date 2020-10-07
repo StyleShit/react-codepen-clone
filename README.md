@@ -5,7 +5,7 @@ This is just a small clone of the Codepen's basic functionality.
 
 ## Available commands:
 
-You can just use the default well-known npm command:
+You can just use the default well-known npm commands:
 
 ### `npm start`
 
@@ -26,4 +26,4 @@ Builds the app for production to the `build` folder.<br />
 
 ### `npm run eject`
 
-If you use it, you probably know what you are doing and the consquences of it...
+Yeah... if you use it, you probably know what you are doing and the consquences of it...
