@@ -9,7 +9,7 @@ import 'codemirror/mode/javascript/javascript';
 import { Controlled as CodeMirror } from 'react-codemirror2';
 
 
-export default function Editor({ value, title, language })
+export default function Editor({ value, title, language, setValue })
 {
     return (
         <div className="editor-container">
@@ -19,12 +19,16 @@ export default function Editor({ value, title, language })
                 <button className="toggle-editor"></button>
             </div>
 
-            <CodeMirror value={ value } options={{
-                mode: language,
-                theme: 'material',
-                lineNumbers: true,
-                indentWithTabs: true
-            }} />
+            <CodeMirror value={ value } 
+                onBeforeChange={( editor, data, value ) => {
+                    setValue( value );
+                }}
+                options={{
+                    mode: language,
+                    theme: 'material',
+                    lineNumbers: true,
+                    indentWithTabs: true
+                }} />
 
         </div>
     )
