@@ -3,6 +3,11 @@
 This is just a small clone of the Codepen's basic functionality.
 
 
+## Installation:
+
+Clone this git, then `npm install && npm start`
+
+
 ## Available commands:
 
 You can just use the default well-known npm commands:
