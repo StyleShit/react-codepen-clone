@@ -21,7 +21,7 @@ function App()
 	useEffect( () => {
 
 		// wait for user to stop typing to prevent too many updates
-		const timeouut = setTimeout( () => {
+		const timeout = setTimeout( () => {
 
 			if( htmlCode.trim() !== '' || cssCode.trim() !== '' || jsCode.trim() !== '' )
 			{
@@ -41,7 +41,7 @@ function App()
 		}, 300);
 
 		return() => {
-			clearTimeout( timeouut );
+			clearTimeout( timeout );
 		}
 
 	}, [ htmlCode, cssCode, jsCode ]);
