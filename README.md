@@ -2,6 +2,8 @@
 
 This is just a small clone of the Codepen's basic functionality.
 
+![Codepen Clone Preview](img/codepen-clone.png "Codepen Clone Preview")
+
 
 ## Installation:
 
