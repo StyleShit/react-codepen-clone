@@ -27,8 +27,8 @@ function App()
 			{
 				setOutput( `
 					<style>${ cssCode }</style>
-					<script>${ jsCode }</script>
 					<body>${ htmlCode }</body>
+					<script>${ jsCode }</script>
 				` );
 			}
 
