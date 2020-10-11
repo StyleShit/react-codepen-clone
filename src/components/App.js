@@ -11,8 +11,8 @@ function App()
 	const APP_PREFIX = 'codepen-clone_';
 
 	// code handlers
-	const [ htmlCode, setHtmlCode ] = useStickyState( APP_PREFIX + 'html-code', '' );
-	const [ cssCode, setCssCode ] 	= useStickyState( APP_PREFIX + 'css-code', '' );
+	const [ htmlCode, setHtmlCode ] = useStickyState( APP_PREFIX + 'html-code', '<h1>It Works!</h1>' );
+	const [ cssCode, setCssCode ] 	= useStickyState( APP_PREFIX + 'css-code', 'body { background-color: #333; color: #FFF }' );
 	const [ jsCode, setJsCode ] 	= useStickyState( APP_PREFIX + 'js-code', '' );
 
 	const [ output, setOutput ] = useState( '' );
